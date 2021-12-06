@@ -285,6 +285,9 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
+"Assets/Scenes/Scripts/Door.cs"
+"Assets/Scenes/Scripts/Interactable.cs"
+"Assets/Scenes/Scripts/PlayerInteraction.cs"
 "Assets/Scenes/Scripts/PlayerLook.cs"
 "Assets/Scenes/Scripts/PlayerMovment.cs"
 -langversion:8.0

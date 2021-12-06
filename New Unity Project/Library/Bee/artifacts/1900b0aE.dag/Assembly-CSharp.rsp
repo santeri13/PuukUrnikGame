@@ -319,9 +319,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/Scenes/Scripts/Interactable.cs"
-"Assets/Scenes/Scripts/PlayerLook.cs"
-"Assets/Scenes/Scripts/PlayerMovment.cs"
+"Assets/Sprites/Scripts/Door.cs"
+"Assets/Sprites/Scripts/Interactable.cs"
+"Assets/Sprites/Scripts/PlayerLook.cs"
+"Assets/Sprites/Scripts/PlayerMovment.cs"
 -langversion:8.0
 
 /deterministic
