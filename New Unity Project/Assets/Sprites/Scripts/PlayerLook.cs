@@ -7,6 +7,8 @@ public class PlayerLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
+    
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -43,11 +45,15 @@ public class PlayerLook : MonoBehaviour
     {
         if(Physics.Raycast(cam.ViewportPointToRay(interactionRayPoint),out RaycastHit hit, interactionDistance))
         {
-            if(hit.collider.gameObject.layer == 7 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID()!= currentInteractable.GetInstanceID()))
+            print(hit.collider);
+            if (hit.collider.gameObject.layer == 7 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID()!= currentInteractable.GetInstanceID()))
             {
-                hit.collider.TryGetComponent(out currentInteractable);
+                
+                currentInteractable = hit.collider.gameObject.GetComponent<Interactable>();
+                
                 if (currentInteractable)
                 {
+                    
                     currentInteractable.OnFocus();
                 }
             }

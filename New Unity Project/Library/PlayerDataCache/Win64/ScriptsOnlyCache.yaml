@@ -1,8 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Bed
     - Door
-    - PlayerInteraction
+    - Fridge
     - PlayerLook
     - PlayerMovment
     Unity.Rider.Editor.dll:
@@ -52,42 +53,52 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2076}
+      Script: {instanceID: 2176}
     - Class: 114
-      Script: {instanceID: 2490}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 3918}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 4264}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4924}
     - Class: 114
-      Script: {instanceID: 4976}
+      Script: {instanceID: 5078}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 5466}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 5512}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 5822}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 7620}
     - Class: 114
-      Script: {instanceID: 21692}
+      Script: {instanceID: 21576}
     - Class: 114
-      Script: {instanceID: 21700}
+      Script: {instanceID: 27612}
+    - Class: 114
+      Script: {instanceID: 28428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -473,6 +484,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 193f20560c1d10cf7e6bf8a472372cdb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Interactable1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -599,7 +616,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 655675a941ea756088027703b43352a4
+      Hash: deb5bd79a7bc14f0268a0d48f2eadf08
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerLook
@@ -881,22 +898,28 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 665443acc99b120117b4023df19e25c9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Door
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6dd8e091a0d4517262fe483019cd463a
+      Hash: 51d69294f328ab65226dcbd25be187f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerInteraction
+    className: Bed
   - hash:
       serializedVersion: 2
-      Hash: 61f435778e6b8f6d6c613b71f9dad57e
+      Hash: 51d69294f328ab65226dcbd25be187f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Door
+    className: Fridge
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

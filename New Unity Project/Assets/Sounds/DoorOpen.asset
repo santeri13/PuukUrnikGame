@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7741a75e672ff1643b03a0c9e7dd7b58, type: 3}
+  m_Name: DoorOpen
+  m_EditorClassIdentifier: 
+  VolumeMin: 1.028
+  VolumeMax: 1.467
+  PitchMin: 0.702
+  PitchMax: 1.436
+  Cooldown: 0.5
+  Clips:
+  - {fileID: 8300000, guid: 588db6c5df6241e418b904a73fa08514, type: 3}
+  - {fileID: 8300000, guid: e36f21540f4684d43a3fdd865b6d802a, type: 3}
+  - {fileID: 8300000, guid: 54053b89bfb6de04194c844c04fe2cfe, type: 3}
