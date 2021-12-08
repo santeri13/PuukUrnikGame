@@ -1,9 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioClipGroop
+    - AudioSourcePool
     - Bed
     - Door
     - Fridge
+    - GameOverScreen
+    - MainGameController
     - PlayerLook
     - PlayerMovment
     Unity.Rider.Editor.dll:
@@ -27,9 +31,75 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1648}
+    - Class: 114
+      Script: {instanceID: 2208}
+    - Class: 114
+      Script: {instanceID: 2622}
+    - Class: 114
+      Script: {instanceID: 2828}
+    - Class: 114
+      Script: {instanceID: 3090}
+    - Class: 114
+      Script: {instanceID: 4054}
+    - Class: 114
+      Script: {instanceID: 4300}
+    - Class: 114
+      Script: {instanceID: 4960}
+    - Class: 114
+      Script: {instanceID: 5502}
+    - Class: 114
+      Script: {instanceID: 5650}
+    - Class: 114
+      Script: {instanceID: 5962}
+    - Class: 114
+      Script: {instanceID: 24992}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -49,8 +119,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -58,6 +126,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -70,35 +142,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2176}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 4018}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 4264}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 4924}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 5078}
+      Script: {instanceID: 4880}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 4960}
     - Class: 114
-      Script: {instanceID: 5614}
+      Script: {instanceID: 5114}
     - Class: 114
-      Script: {instanceID: 5924}
+      Script: {instanceID: 5502}
     - Class: 114
-      Script: {instanceID: 6178}
+      Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 7620}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 21576}
+      Script: {instanceID: 5962}
     - Class: 114
-      Script: {instanceID: 27612}
+      Script: {instanceID: 6216}
     - Class: 114
-      Script: {instanceID: 28428}
+      Script: {instanceID: 7434}
+    - Class: 114
+      Script: {instanceID: 7660}
+    - Class: 114
+      Script: {instanceID: 21988}
+    - Class: 114
+      Script: {instanceID: 22756}
+    - Class: 114
+      Script: {instanceID: 24992}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -108,6 +188,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 215
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -304,6 +388,12 @@ ScriptsOnlyBuild:
     className: UnityOnInputFieldEndEditMessageListener
   - hash:
       serializedVersion: 2
+      Hash: f7422a23b6186778f360d7ea25eb3703
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioClipGroop
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -356,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 51d69294f328ab65226dcbd25be187f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fridge
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
@@ -676,6 +772,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c1e5ca4f8a16f7fded6a7cc229b8e937
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioSourcePool
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -874,6 +976,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 51d69294f328ab65226dcbd25be187f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bed
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -898,7 +1006,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 665443acc99b120117b4023df19e25c9
+      Hash: eb0982895e89707b05cd58b149327524
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Door
@@ -910,17 +1018,18 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 51d69294f328ab65226dcbd25be187f8
+      Hash: 0596a09d3262e5118fb2b8485f266696
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Bed
+    className: MainGameController
   - hash:
       serializedVersion: 2
-      Hash: 51d69294f328ab65226dcbd25be187f8
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Fridge
+    className: GameOverScreen
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
   playerPath: "D:/GameDev/Puuk\xDC\xFCrnik/New Unity Project.exe"

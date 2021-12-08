@@ -97,8 +97,8 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"D:/GameDev/PuukÜürnik/GameJamPuuk-rnik/New Unity Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll"
--r:"D:/GameDev/PuukÜürnik/GameJamPuuk-rnik/New Unity Project/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/GameDev/PuukÜürnik/backup/GameJamPuuk-rnik/New Unity Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"D:/GameDev/PuukÜürnik/backup/GameJamPuuk-rnik/New Unity Project/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/unity/2021.1.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
 -r:"D:/unity/2021.1.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
 -r:"D:/unity/2021.1.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
@@ -285,11 +285,15 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
+"Assets/Sprites/Scripts/AudioClipGroop.cs"
+"Assets/Sprites/Scripts/AudioSourcePool.cs"
 "Assets/Sprites/Scripts/Bed.cs"
 "Assets/Sprites/Scripts/Door.cs"
 "Assets/Sprites/Scripts/Fridge.cs"
+"Assets/Sprites/Scripts/GameOverScreen.cs"
 "Assets/Sprites/Scripts/Interactable.cs"
 "Assets/Sprites/Scripts/Interactable1.cs"
+"Assets/Sprites/Scripts/MainGameController.cs"
 "Assets/Sprites/Scripts/PlayerLook.cs"
 "Assets/Sprites/Scripts/PlayerMovment.cs"
 -langversion:8.0
