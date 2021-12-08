@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : Interactable
-
 {
     public AudioClipGroop DoorOpenAudio;
     public AudioClipGroop DoorCloseAuido;
@@ -22,19 +21,19 @@ public class Door : Interactable
         {
             IsOpen = false;
             DoorOpenAudio.Play();
+            animator.SetBool("isOpen", IsOpen);
         }
         else
         {
             IsOpen = true;
             DoorCloseAuido.Play();
+            animator.SetBool("isOpen", IsOpen);
         }
-        
+
     }
 
     public override void OnLoseFocus()
     {
         interactionText.text = "";
     }
-
-  
 }
