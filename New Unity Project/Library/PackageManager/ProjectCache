@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637745891769856858
-    m_Hash: 1236632546
+      ticks: 637745910854305224
+    m_Hash: 2285467079
   m_LockFileStatus:
     m_FilePath: "D:/GameDev/Puuk\xDC\xFCrnik/backup/GameJamPuuk-rnik/New Unity Project/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637745891770447380
-    m_Hash: 3102916557
+      ticks: 637745910854305224
+    m_Hash: 2337248730
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
