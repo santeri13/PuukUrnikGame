@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : Interactable
+public class Door : MonoBehaviour
 {
-    public override void OnFocus()
+    public bool isOpen;
+    public Animator animator;
+    public void OpenDoor()
     {
-        print("VAATAN");
-    }
+        if (!isOpen)
+        {
+            isOpen = true;
+            Debug.Log("Open Door");
 
-    public override void OnInteract()
-    {
-        print("KATSUSIN");
-    }
-
-    public override void OnLoseFocus()
-    {
-        print("EI VAATA");
+        }
     }
 }

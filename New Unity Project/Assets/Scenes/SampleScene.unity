@@ -420,6 +420,79 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2463505205311851477, guid: 6f91be74abc178848b2bb7fb144f17b6, type: 3}
+--- !u!1 &702392565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702392568}
+  - component: {fileID: 702392567}
+  - component: {fileID: 702392566}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702392565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b97021bca1f8054f914bdd6284944ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRange: 0
+  interactKey: 101
+  Events:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1376650336}
+        m_TargetAssemblyTypeName: Door, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &702392567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702392565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.995551, y: 19.973537, z: 10.824245}
+  m_Center: {x: 2.4977756, y: -6.3364086, z: 1.8181667}
+--- !u!4 &702392568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702392565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.92, y: 17.36, z: 20.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +831,7 @@ GameObject:
   - component: {fileID: 1376650333}
   - component: {fileID: 1376650332}
   - component: {fileID: 1376650331}
+  - component: {fileID: 1376650336}
   m_Layer: 7
   m_Name: Cube(forDoor)
   m_TagString: Untagged
@@ -862,6 +936,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1376650336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376650330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df14e5c442d421a4abf792bcd3403b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  animator: {fileID: 0}
 --- !u!1 &1480216772 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 05b4f85ad73f93540b1a60426b924d68, type: 3}
@@ -879,7 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2583d8280b017c4a9cac7a1fbc02869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
 --- !u!4 &1480216776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05b4f85ad73f93540b1a60426b924d68, type: 3}
@@ -897,6 +984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df14e5c442d421a4abf792bcd3403b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOpen: 0
+  animator: {fileID: 0}
 --- !u!65 &1480216778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -924,7 +1013,7 @@ GameObject:
   - component: {fileID: 1990969817}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,8 +1085,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff1efbda25b22248a4db8a83080066d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 10
-  interactionText: {fileID: 0}
-  interactionHoldGO: {fileID: 0}
-  interactionHoldProgress: {fileID: 0}
-  cam: {fileID: 0}
