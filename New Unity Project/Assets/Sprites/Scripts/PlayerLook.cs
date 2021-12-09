@@ -21,6 +21,9 @@ public class PlayerLook : MonoBehaviour
     private Interactable currentInteractable;
     public Camera cam;
 
+    public Canvas DialogBox;
+    public MainGameController mainGameController;
+
 
 
     // Update is called once per frame
@@ -67,11 +70,29 @@ public class PlayerLook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null && Physics.Raycast(cam.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
-            currentInteractable.OnInteract();
+            print(hit);
+            currentInteractable.OnInteract(mainGameController.GetScene());
         }
-            
-        
+        if (Input.GetKeyDown(KeyCode.Alpha1) && DialogBox.isActiveAndEnabled)
+        {
+            mainGameController.events(1);
+            currentInteractable.OnInteract(mainGameController.GetScene());
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) && DialogBox.isActiveAndEnabled)
+        {
+            mainGameController.events(2);
+            currentInteractable.OnInteract(mainGameController.GetScene());
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) && DialogBox.isActiveAndEnabled)
+        {
+            mainGameController.events(3);
+            currentInteractable.OnInteract(mainGameController.GetScene());
+        }
 
-        
+
+
+
+
+
     }
 }

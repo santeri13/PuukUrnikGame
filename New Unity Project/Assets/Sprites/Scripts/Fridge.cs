@@ -12,7 +12,7 @@ public class Fridge : Interactable
         interactionText.text = "E et süüa";
     }
 
-    public override void OnInteract()
+    public override void OnInteract(int none)
     {
         gameController.Eat();
     }

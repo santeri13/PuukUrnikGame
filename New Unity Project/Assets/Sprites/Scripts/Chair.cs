@@ -13,7 +13,7 @@ public class Chair : Interactable
         interactionText.text = "E et Istuda";
     }
 
-    public override void OnInteract()
+    public override void OnInteract(int none)
     {
         gameController.Sit();
     }

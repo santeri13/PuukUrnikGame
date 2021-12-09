@@ -28,7 +28,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -78,17 +77,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 4098}
+      Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 4350}
+      Script: {instanceID: 4354}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5592}
+      Script: {instanceID: 5596}
     - Class: 114
-      Script: {instanceID: 5742}
+      Script: {instanceID: 5746}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6060}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,33 +162,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 5194}
+      Script: {instanceID: 4954}
     - Class: 114
-      Script: {instanceID: 5592}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5742}
+      Script: {instanceID: 5198}
     - Class: 114
-      Script: {instanceID: 5972}
+      Script: {instanceID: 5596}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 5746}
     - Class: 114
-      Script: {instanceID: 6316}
+      Script: {instanceID: 5976}
     - Class: 114
-      Script: {instanceID: 6942}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 7572}
+      Script: {instanceID: 6320}
     - Class: 114
-      Script: {instanceID: 7802}
+      Script: {instanceID: 6946}
     - Class: 114
-      Script: {instanceID: 22104}
+      Script: {instanceID: 7576}
     - Class: 114
-      Script: {instanceID: 36782}
+      Script: {instanceID: 7806}
     - Class: 114
-      Script: {instanceID: 46644}
+      Script: {instanceID: 22302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -203,6 +202,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -509,6 +510,12 @@ ScriptsOnlyBuild:
     className: VariablesAsset
   - hash:
       serializedVersion: 2
+      Hash: f7558d04e3693852c85cd4deb41c38a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Chair
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
@@ -531,6 +538,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 30f3213a6e218a461fa00e428f22d3eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlackScreen
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -815,7 +828,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: deb5bd79a7bc14f0268a0d48f2eadf08
+      Hash: 64f25d783f20c64e62dc7f9862785e6b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerLook
@@ -1025,7 +1038,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 47f4852cc8e66acc13e04a957071d0cc
+      Hash: 5cf5c8f07e62c50df539f1c414b46405
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainGameController
@@ -1109,7 +1122,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 51d69294f328ab65226dcbd25be187f8
+      Hash: f7558d04e3693852c85cd4deb41c38a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bed
@@ -1139,7 +1152,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: eb0982895e89707b05cd58b149327524
+      Hash: 1b3196f336d34f57b679c718d238d946
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Door
@@ -1149,18 +1162,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f7558d04e3693852c85cd4deb41c38a7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Chair
-  - hash:
-      serializedVersion: 2
-      Hash: 30f3213a6e218a461fa00e428f22d3eb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlackScreen
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
