@@ -45,7 +45,6 @@ public class PlayerLook : MonoBehaviour
     {
         if(Physics.Raycast(cam.ViewportPointToRay(interactionRayPoint),out RaycastHit hit, interactionDistance))
         {
-            print(hit.collider);
             if (hit.collider.gameObject.layer == 7 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID()!= currentInteractable.GetInstanceID()))
             {
                 

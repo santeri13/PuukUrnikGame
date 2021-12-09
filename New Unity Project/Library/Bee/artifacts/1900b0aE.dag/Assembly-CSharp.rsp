@@ -325,6 +325,8 @@
 "Assets/Sprites/Scripts/AudioClipGroop.cs"
 "Assets/Sprites/Scripts/AudioSourcePool.cs"
 "Assets/Sprites/Scripts/Bed.cs"
+"Assets/Sprites/Scripts/BlackScreen.cs"
+"Assets/Sprites/Scripts/Chair.cs"
 "Assets/Sprites/Scripts/Door.cs"
 "Assets/Sprites/Scripts/Fridge.cs"
 "Assets/Sprites/Scripts/GameOverScreen.cs"

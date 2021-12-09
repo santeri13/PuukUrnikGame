@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fridge : Interactable
 {
     public TMPro.TextMeshProUGUI interactionText;
+    public MainGameController gameController;
 
     public override void OnFocus()
     {
@@ -13,7 +14,7 @@ public class Fridge : Interactable
 
     public override void OnInteract()
     {
-
+        gameController.Eat();
     }
 
     public override void OnLoseFocus()

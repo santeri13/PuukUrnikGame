@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bed : Interactable
 {
     public TMPro.TextMeshProUGUI interactionText;
-
+    public MainGameController gameController;
     public override void OnFocus()
     {
         interactionText.text = "E et Magada";
@@ -13,7 +13,7 @@ public class Bed : Interactable
 
     public override void OnInteract()
     {
-
+        gameController.SleepOnBed();
     }
 
     public override void OnLoseFocus()

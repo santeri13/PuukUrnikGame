@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class MainGameController : MonoBehaviour
 {
+    [Header("UIstuff")]
     public GameOverScreen Gameoverscreen;
+    public BlackScreen blackScreen;
 
 
 
@@ -25,7 +27,10 @@ public class MainGameController : MonoBehaviour
     public Slider HeatSlider;
     public float HeatOT = 0f;
 
+    [Header("Prefabs")]
+    public GameObject TrashBag;
 
+    private int TimesEaten = 0;
     void Start()
     {
         
@@ -42,6 +47,43 @@ public class MainGameController : MonoBehaviour
             GameOver();
         }
         UpdateSliders();
+    }
+    public void Sit()
+    {
+        blackScreen.fade();
+        Sleep += 25;
+        if(Sleep > 100)
+        {
+            Sleep = 100;
+        }
+        
+    }
+    public void Eat()
+    {
+        Hunger += 50;
+        if (Hunger > 100)
+        {
+            Hunger = 100;
+        }
+        TimesEaten += 1;
+        if(TimesEaten == 2)
+        {
+            TimesEaten = 0;
+            GenerateTrash();
+        }
+    }
+
+
+    void GenerateTrash()
+    {
+        Instantiate(TrashBag, new Vector3(Random.Range(10,0), 10, Random.Range(10, 0)), Quaternion.identity);        
+    }
+
+
+    public void SleepOnBed()
+    {
+        blackScreen.fade();
+        Sleep = 100;
     }
     void UpdateSliders()
     {
